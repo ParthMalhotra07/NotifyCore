@@ -2,6 +2,7 @@ import { Heading } from "../../components/headings"
 import { MaxWidthWrapper } from "../../components/max-width-wrapper"
 import { Check } from "lucide-react"
 import { ShinyButton } from "../../components/ShinyButton"
+import { MockDiscordUI } from "../components/mock-discord-ui"
 const page=()=>{
   return <>
   <section className="relative py-24 sm:py-32 bg-brand-25">
@@ -44,7 +45,18 @@ const page=()=>{
     </div>
     </MaxWidthWrapper>
   </section>
-  <section></section>
+  <section className="relative bg-brand-25 pb-4">
+    <div  className="absolute inset-x-0 bottom-24 top-24 bg-brand-700"/>
+    <MaxWidthWrapper className="relative mx-auto">
+      <div className="-m-2 rounded-xl bg-gray-900/10 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+        <MockDiscordUI>
+          <div className="flex-1 rounded-lg bg-discord-background p-6 text-sm text-discord-foreground/80">
+            Discord preview area
+          </div>
+        </MockDiscordUI>
+      </div>
+    </MaxWidthWrapper>
+  </section>
   <section></section>
   <section></section>
   </>
