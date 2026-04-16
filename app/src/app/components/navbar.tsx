@@ -1,0 +1,22 @@
+import { MaxWidthWrapper } from "../../components/max-width-wrapper"
+import Link from "next/link"
+
+export const Navbar=()=>{
+    const user=false;
+    return <nav className="sticky z-[100] h-16 inset-x-0 
+    top-0 w-full border-b border-gray-200 bg-white 
+    backdrop-blur-lg transition-all">
+        <MaxWidthWrapper>
+            <div className="flex h-16 items-center justify-between">
+               <Link href="/" className="font-bold text-xl">
+                                 Ping<span className="text-blue-600">Panda</span>
+               </Link>
+               <div className="h-full flex items-center space-x-4">
+                {
+                    user ? null : null
+                }
+               </div>
+            </div>
+        </MaxWidthWrapper>
+    </nav>
+}
