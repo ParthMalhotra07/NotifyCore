@@ -1,0 +1,25 @@
+{
+  "name": "notify-core",
+  "version": "0.0.0",
+  "description": "A real-time SaaS insight delivery application that integrates directly with Discord.",
+  "author": "Parth Malhotra",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ParthMalhotra07/NotifyCore.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jstack",
+    "next.js",
+    "typescript",
+    "hono"
+  ],
+  "dependencies": {
+    "@clerk/nextjs": "^7.1.0",
+    "prettier": "^3.4.2"
+  }
+}
